@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="react.development.js" crossorigin></script>
+    <script src="react-dom.development.js" crossorigin></script>
+    <script src="babel.min.js"></script>
+  </head>
+  <body>
+
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+     
+     function Menu() {
+        return <div>Menu</div>;
+      }
+
+
+      function Filter() {
+        return <div>Filter</div>;
+      }
+
+
+      function Search(){
+
+        return <div>Search</div>
+      }
+
+
+      function Stage() {
+        return <div>Stage</div>;
+      }
+
+      function OrderKanban() {
+        return <div>OrderKanban</div>;
+      }
+
+      function OrderDetails(){
+
+       return <div>OrderDetails</div>;
+        
+      }
+
+
+
+
+
+      const container = document.getElementById('mydiv');
+      const root = ReactDOM.createRoot(container);
+      root.render(<div>
+        <Menu />
+        <Filter/>
+        <Search/>
+        <Stage/>
+        <OrderKanban/>
+        <OrderDetails/>
+        
+        </div>)
+    </script>
+
+  </body>
+</html>
